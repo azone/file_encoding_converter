@@ -11,7 +11,7 @@ def print_error(error_string):
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description='Convert a file\'s encoding to what you want.')
   parser.add_argument('input_file', metavar='input_file', help='Input file', nargs=1)
-  parser.add_argument('-o', '--output_file', help='Output file(this will replace the input file if its not specified)', default=None)
+  parser.add_argument('-o', '--output_file', help='Output file(this will replace the input file if not specified)', default=None)
   parser.add_argument('-d', '--input_encoding', help='Input encoding', default='GBK')
   parser.add_argument('-e', '--output_encoding', help='Output encoding', default='UTF-8')
   args = parser.parse_args()
